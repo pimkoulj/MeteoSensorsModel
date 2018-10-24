@@ -10,10 +10,11 @@ public class Measure {
 	private int id;
 	private String ville;
 	private String pays;
+	private String gps;
 	
 	public Measure() {}
 	
-	public Measure(String nom, long date, String type, double valeur, int id, String ville, String pays) {
+	public Measure(String nom, long date, String type, double valeur, int id, String ville, String pays, String gps) {
 		super();
 		this.nom = nom;
 		this.date = date;
@@ -22,7 +23,17 @@ public class Measure {
 		this.id = id;
 		this.ville = ville;
 		this.pays = pays;
+		this.gps = gps;
 	}
+
+	public String getGps() {
+		return gps;
+	}
+
+	public void setGps(String gps) {
+		this.gps = gps;
+	}
+
 	public String getNom() {
 		return nom;
 	}
